@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-15T16:28:03 IST" name="Failed suite [Default suite]" finished-at="2025-02-15T16:28:07 IST" duration-ms="4053">
+    <groups>
+    </groups>
+    <test started-at="2025-02-15T16:28:03 IST" name="Default test(failed)" finished-at="2025-02-15T16:28:07 IST" duration-ms="4053">
+      <class name="techWithJatin.apis.tests.LoginTest">
+        <test-method signature="login1Test()[pri:0, instance:techWithJatin.apis.tests.LoginTest@1165b38]" started-at="2025-02-15T16:28:03 IST" name="login1Test" finished-at="2025-02-15T16:28:03 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login1Test -->
+        <test-method signature="loginTest()[pri:0, instance:techWithJatin.apis.tests.LoginTest@1165b38]" started-at="2025-02-15T16:28:03 IST" name="loginTest" finished-at="2025-02-15T16:28:07 IST" duration-ms="3979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- techWithJatin.apis.tests.LoginTest -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
