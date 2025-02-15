@@ -2,9 +2,7 @@ package techWithJatin.apis.tests;
 
 import io.restassured.response.Response;
 import org.junit.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import techWithJatin.apis.listeners.TestListener;
 import techWithJatin.apis.services.AuthService;
 import techWithJatin.models.request.LoginRequest;
 import techWithJatin.models.request.SignUpRequest;
