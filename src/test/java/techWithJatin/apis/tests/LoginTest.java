@@ -13,6 +13,7 @@ import techWithJatin.models.response.LoginResponse;
 @Listeners(techWithJatin.apis.listeners.TestListener.class)
 public class LoginTest {
 
+    //Logger
     private static final Logger log = LogManager.getLogger(LoginTest.class);
 
     @Test
