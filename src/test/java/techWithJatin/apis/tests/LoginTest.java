@@ -26,14 +26,14 @@ public class LoginTest {
             Response r = authService.login(loginRequest);
             /* builder pattern - response **/
             LoginResponse loginResponse = r.as(LoginResponse.class);
-            System.out.println(STR."Response: \{r.asPrettyString()}");
+            log.info("Response: {}", r.asPrettyString());
             Assert.assertEquals(r.getStatusCode(), 200);
-            System.out.println("LoginResponse Username: " + loginResponse.getUsername());
-            System.out.println("LoginResponse Email: " + loginResponse.getEmail());
-            System.out.println("LoginResponse Type: " + loginResponse.getType());
-            System.out.println("LoginResponse Token: " + loginResponse.getToken());
-            System.out.println("LoginResponse Roles: " + loginResponse.getRoles());
-            System.out.println("LoginResponse Id: " + loginResponse.getId());
+            log.info("LoginResponse Username: {}", loginResponse.getUsername());
+            log.info("LoginResponse Email: {}", loginResponse.getEmail());
+            log.info("LoginResponse Type: {}", loginResponse.getType());
+            log.info("LoginResponse Token: {}", loginResponse.getToken());
+            log.info("LoginResponse Roles: {}", loginResponse.getRoles());
+            log.info("LoginResponse Id: {}", loginResponse.getId());
         }
 
     @Test
