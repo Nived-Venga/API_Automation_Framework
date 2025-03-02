@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class AuthService extends BaseService {
 
-    String BASE_PATH = RestAssured.basePath = "api/auth/";
+    String BASE_PATH = RestAssured.basePath + "api/auth/";
 
     public Response login(Object payload){
         return postRequest(payload,BASE_PATH + "login");
