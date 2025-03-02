@@ -18,11 +18,14 @@ public class LoginTest {
     @Test
         public void loginTest(){
 
+            /* builder pattern - request **/
             LoginRequest loginRequest = new LoginRequest("nived125","nived125");
+            /* service calls **/
             AuthService authService = new AuthService();
             Response r = authService.login(loginRequest);
+            /* builder pattern - response **/
             LoginResponse loginResponse = r.as(LoginResponse.class);
-            System.out.println("Response: " + r.asPrettyString());
+            System.out.println(STR."Response: \{r.asPrettyString()}");
             Assert.assertEquals(r.getStatusCode(), 200);
             System.out.println("LoginResponse Username: " + loginResponse.getUsername());
             System.out.println("LoginResponse Email: " + loginResponse.getEmail());
